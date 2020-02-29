@@ -40,6 +40,13 @@
         android:fragment="com.android.settings.gestures.SystemNavigationGestureSettings"
         settings:controller="com.android.settings.gestures.SystemNavigationPreferenceController" />
 
+    <Preference
+        android:key="gesture_nav_custom_options"
+        android:title="@string/navbar_gesture_tweaks_pref_title"
+        android:summary="@string/navbar_gesture_tweaks_pref_summary"
+        android:fragment="com.blackiron.settings.fragments.GestureTweaksSettings"
+        settings:allowDividerAbove="false"/>
+
     </PreferenceCategory>
 
     <org.blackiron.support.preferences.RemotePreference
