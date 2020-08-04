@@ -6,7 +6,7 @@
 <PreferenceScreen 
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-    android:title="@string/ambient_battery_settings_title">
+    android:title="@string/ambient_ui_settings_title">
 
     <org.blackiron.support.preferences.SystemSettingSwitchPreference
         android:key="sysui_keyguard_show_battery_bar"
@@ -20,5 +20,11 @@
         android:summary="@string/keyguard_show_battery_always_summary"
         android:dependency="sysui_keyguard_show_battery_bar"
         android:defaultValue="false" />
+
+    <Preference
+        android:key="ambient_customization"
+        android:title="@string/ambient_text_category_title"
+        android:summary="@string/ambient_text_category_summary"
+        android:fragment="com.blackiron.settings.fragments.AmbientCustomizations" />
 
 </PreferenceScreen>
