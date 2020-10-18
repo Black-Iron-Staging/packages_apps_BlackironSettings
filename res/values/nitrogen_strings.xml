@@ -46,4 +46,7 @@
 
     <!-- Navbar options -->
     <string name="navbar_invert_layout_title">Invert layout</string>
+
+    <string name="radio_info_title">Radio info</string>
+
 </resources>
