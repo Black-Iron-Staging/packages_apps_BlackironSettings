@@ -158,4 +158,8 @@
     <string name="qs_show_battery_estimate_summary_on">Show battery estimates in QS</string>
     <string name="qs_show_battery_estimate_summary_off">Hide battery estimates in QS</string>
     <string name="battery_title">Battery</string>
+
+    <!-- Statusbar colored icons -->
+    <string name="statusbar_colored_icons_title">Colored icons</string>
+    <string name="statusbar_colored_icons_summary">Use proper app icons for notification icons in statusbar</string>
 </resources>
