@@ -65,6 +65,14 @@
         android:summary="@string/fprint_sucess_vib_summary"
         android:persistent="false" />
 
+    <org.blackiron.support.preferences.SystemSettingListPreference
+        android:key="screen_off_animation"
+        android:title="@string/screen_off_animation_title"
+        android:dialogTitle="@string/screen_off_animation_title"
+        android:entries="@array/screen_off_animation_entries"
+        android:entryValues="@array/screen_off_animation_values"
+        android:defaultValue="0" />
+
     <PreferenceCategory
         android:key="lockscreen_ui_charging_category"
         android:title="@string/charging_category">
