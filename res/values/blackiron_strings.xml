@@ -310,4 +310,9 @@
     <!-- QS Transparency -->
     <string name="qs_transparency_title">Background transparency</string>
     <string name="qs_transparency_summary">Set transparency level for QS background</string>
+
+    <!-- Statusbar lyric -->
+    <string name="status_bar_lyric_title">Status bar lyric</string>
+    <string name="status_bar_lyric_summary">Show lyric in status bar (need app support)</string>
+    <string name="status_bar_show_lyric_title">Enable status bar lyric</string>
 </resources>
