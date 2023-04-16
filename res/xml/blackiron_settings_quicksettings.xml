@@ -51,4 +51,16 @@
             android:summary="@string/qs_panel_options_summary"
             android:fragment="com.blackiron.settings.fragments.QSPanelSettings" />
 
+     <PreferenceCategory
+        android:key="quick_settings_footer_category"
+        android:title="@string/footer_category">
+
+        <org.blackiron.support.preferences.SecureSettingSwitchPreference
+            android:key="qs_show_data_usage"
+            android:title="@string/qs_show_data_usage_title"
+            android:summary="@string/qs_show_data_usage_summary"
+            android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
