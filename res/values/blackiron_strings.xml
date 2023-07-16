@@ -109,8 +109,13 @@
     <string name="qs_show_auto_brightness_title">Auto brightness icon</string>
     <string name="qs_show_auto_brightness_summary">Show toggle for adaptive brightness near the slider</string>
 
+    <!-- QS style -->
+    <string name="qs_style_title">QS Panel style</string>
+    <string name="qs_style_default">Large pill</string>
+    <string name="qs_style_round">Small circle</string>
+
     <!-- QS tile shape -->
-    <string name="qs_tile_shape">QS tile shape</string>
+    <string name="qs_tile_shape">QS Tile shape</string>
     <string name="qs_tile_round">Round</string>
     <string name="qs_tile_rect">Rounded Rectangle</string>
     <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
