@@ -18,6 +18,12 @@
 	android:title="@string/notifications_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <Preference
+        android:key="island_notification"
+        android:title="@string/island_notification_title"
+        android:summary="@string/island_notification_summary"
+        android:fragment="com.blackiron.settings.fragments.IslandSettings" />
+
     <PreferenceCategory
         android:key="pulse_ambient_light_category"
         android:title="@string/pulse_ambient_light_category" >
