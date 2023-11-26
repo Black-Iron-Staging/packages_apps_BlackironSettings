@@ -34,6 +34,7 @@
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="advanced">Advanced</string>
+    <string name="default_string">Default</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
