@@ -18,4 +18,28 @@
     android:title="@string/lockscreen_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+            android:key="wake_when_plugged_or_unplugged"
+            android:title="@string/wake_when_plugged_or_unplugged_title"
+            android:summary="@string/wake_when_plugged_or_unplugged_summary"
+            android:defaultValue="@*android:bool/config_unplugTurnsOnScreen" />
+
+        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_enable_power_menu"
+            android:title="@string/lockscreen_enable_power_menu_title"
+            android:summary="@string/lockscreen_enable_power_menu_summary"
+            android:defaultValue="true" />
+
+        <SwitchPreference
+            android:key="pulse_on_new_tracks"
+            android:title="@string/pulse_on_new_tracks_title"
+            android:summary="@string/pulse_on_new_tracks_summary"
+            settings:controller="com.android.settings.display.PulseOnNewTracksPreferenceController" />
+
+    <Preference
+        android:key="gesture_screen_off_udfps_input_summary"
+        android:title="@string/ambient_display_screen_off_udfps_title"
+        android:fragment="com.android.settings.gestures.ScreenOffUdfpsSettings"
+        settings:searchable="false"
+        settings:controller="com.android.settings.gestures.ScreenOffUdfpsPreferenceController" />
 </PreferenceScreen>

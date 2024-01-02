@@ -26,4 +26,35 @@
                 android:targetClass="com.android.phone.settings.RadioInfo" />
     </Preference>
 
+    <ListPreference
+        android:key="wifi_timeout"
+        android:title="@string/wifi_timeout"
+        android:summary="@string/wifi_timeout_summary"
+        android:entries="@array/wifi_timeout_entries"
+        android:entryValues="@array/wifi_timeout_values"
+        settings:controller="com.android.settings.wifi.WifiTimeoutPreferenceController"/>
+
+    <androidx.preference.ListPreference
+        android:key="bluetooth_timeout"
+        android:title="@string/bluetooth_timeout"
+        android:summary="@string/summary_placeholder"
+        android:entries="@array/bluetooth_timeout_entries"
+        android:entryValues="@array/bluetooth_timeout_values"
+        settings:controller="com.android.settings.bluetooth.BluetoothTimeoutPreferenceController"/>
+
+    <ListPreference
+        android:key="device_reboot_timeout"
+        android:entries="@array/device_reboot_timeout_entries"
+        android:entryValues="@array/device_reboot_timeout_values"
+        android:summary="@string/device_reboot_timeout_summary"
+        android:title="@string/device_reboot_timeout_title"
+        settings:controller="com.android.settings.security.DeviceRebootTimeoutPreferenceController" />
+
+     <Preference
+        android:key="display_cutout_force_fullscreen_settings"
+        android:title="@string/display_cutout_force_fullscreen_title"
+        android:summary="@string/display_cutout_force_fullscreen_summary"
+        android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
+        settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
+
 </PreferenceScreen>
