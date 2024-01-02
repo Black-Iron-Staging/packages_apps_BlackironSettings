@@ -41,7 +41,7 @@ public class BlackironSettings extends SettingsPreferenceFragment {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.CUSTOM_SETTINGS;
+        return MetricsProto.MetricsEvent.BLKI_SETTINGS;
     }
 
     public static void lockCurrentOrientation(Activity activity) {
