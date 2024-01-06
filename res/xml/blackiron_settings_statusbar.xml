@@ -39,4 +39,11 @@
         android:fragment="com.blackiron.settings.fragments.ClockDateSettings" />
 
     </PreferenceCategory>
+
+        <Preference
+        android:key="battery_bar_category"
+        android:title="@string/battery_settings_title" 
+        android:summary="@string/status_bar_battery_style_summary"
+        android:fragment="com.blackiron.settings.fragments.BatterySettings" />
+
 </PreferenceScreen>
