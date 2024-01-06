@@ -114,4 +114,9 @@
     <string name="qs_tile_round">Round</string>
     <string name="qs_tile_rect">Rounded Rectangle</string>
     <string name="qs_tile_mix">Round for active tiles and Rounded Rectangle for inactive tiles</string>
+
+    <!-- QS panel -->
+    <string name="qs_panel_options_title">QS tiles layout</string>
+    <string name="qs_panel_options_summary">Customize tiles layout in QS panel</string>
+    <string name="category_name_qs_tiles">QS tiles</string>
 </resources>
