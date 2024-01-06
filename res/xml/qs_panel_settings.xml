@@ -34,7 +34,7 @@
             android:entryValues="@array/qs_tile_shape_values"
             android:defaultValue="2" />
 
-        <org.blackiron.support.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.support.SecureSettingSeekBarPreference
             android:key="qqs_num_columns"
             android:title="@string/qqs_columns"
             android:min="@string/qqs_columns_min"
@@ -43,7 +43,7 @@
             settings:textStart="@string/qqs_columns_min"
             settings:textEnd="@string/qqs_columns_max" />
 
-        <org.blackiron.support.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.support.SecureSettingSeekBarPreference
             android:key="qqs_num_columns_landscape"
             android:title="@string/qqs_columns_landscape"
             android:min="@string/qqs_columns_landscape_min"
@@ -52,7 +52,7 @@
             settings:textStart="@string/qqs_columns_landscape_min"
             settings:textEnd="@string/qqs_columns_landscape_max" />
 
-        <org.blackiron.support.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.support.SecureSettingSeekBarPreference
             android:key="qs_num_columns"
             android:title="@string/qs_columns"
             android:min="@string/qs_columns_min"
@@ -61,7 +61,7 @@
             settings:textStart="@string/qs_columns_min"
             settings:textEnd="@string/qs_columns_max" />
 
-        <org.blackiron.support.preferences.SecureSettingSeekBarPreference
+        <com.android.settings.support.SecureSettingSeekBarPreference
             android:key="qs_num_columns_landscape"
             android:title="@string/qs_columns_landscape"
             android:min="@string/qs_columns_landscape_min"
