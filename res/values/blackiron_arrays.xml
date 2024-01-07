@@ -817,19 +817,18 @@
         <item>file</item>
     </string-array>
     
-    <string-array name="shake_gestures_action_entries">
-        <item>@string/hardware_keys_action_nothing</item>
-        <item>@string/shake_gestures_toggle_flashlight</item>
-        <item>@string/shake_gestures_media_playback</item>
-        <item>@string/shake_gestures_volume_panel</item>
-        <item>@string/shake_gestures_screen_wake</item>
-        <item>@string/shake_gestures_clear_notifs</item>
-        <item>@string/shake_gestures_toggle_ringer</item>
-        <item>@string/shake_gestures_screenshot</item>
-        <item>@string/hardware_keys_action_close_app</item>
-   </string-array>
+    <string-array name="clock_style_entries">
+        <item>Default</item>
+        <item>Clock OOS</item>
+        <item>Clock IOS</item>
+        <item>Clock COS</item>
+        <item>Clock Custom</item>
+        <item>Clock Custom 1</item>
+        <item>Clock Custom 2</item>
+        <item>Clock Custom 3</item>
+    </string-array>
 
-    <string-array name="shake_gestures_action_values" translatable="false">
+    <string-array name="clock_style_values">
         <item>0</item>
         <item>1</item>
         <item>2</item>
@@ -838,6 +837,5 @@
         <item>5</item>
         <item>6</item>
         <item>7</item>
-        <item>8</item>
     </string-array>
 </resources>

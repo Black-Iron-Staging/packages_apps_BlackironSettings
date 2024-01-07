@@ -17,7 +17,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- About Blackiron -->
-    <string name="about_crdroid">About Blackiron</string>
+    <string name="about_blackiron">About Blackiron</string>
     <string name="about_device_name">Device</string>
 
     <!-- App Title -->
@@ -1300,4 +1300,8 @@
     <!-- Adaptive Charging -->
     <string name="adaptive_charging_enabled_title">Optimized Charging</string>
     <string name="adaptive_charging_enabled_summary">Enable adaptive power strategy while device is charging</string>
+    
+    <!-- Custom Clock Style -->
+    <string name="lockscreen_clock_category_title">Lockscreen Clock</string>
+    <string name="custom_clock_style">Custom Clock Style</string>
 </resources>
