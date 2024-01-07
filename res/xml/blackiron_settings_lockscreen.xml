@@ -36,6 +36,12 @@
             android:summary="@string/pulse_on_new_tracks_summary"
             settings:controller="com.android.settings.display.PulseOnNewTracksPreferenceController" />
 
+        <Preference
+         android:key="ambient_ui"
+         android:fragment="com.blackiron.settings.fragments.AmbientUI"
+         android:icon="@drawable/ic_aod"
+         android:title="@string/ambient_ui" />
+
     <PreferenceCategory
         android:key="lockscreen_media_art_options"
         android:title="@string/lockscreen_media_art_options_title">
