@@ -39,7 +39,6 @@
         <Preference
          android:key="ambient_ui"
          android:fragment="com.blackiron.settings.fragments.AmbientUI"
-         android:icon="@drawable/ic_aod"
          android:title="@string/ambient_ui" />
 
     <PreferenceCategory
