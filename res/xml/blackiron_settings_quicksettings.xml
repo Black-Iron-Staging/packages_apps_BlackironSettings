@@ -44,12 +44,18 @@
 
     </PreferenceCategory>
 
-        <Preference
-            android:key="qs_panel_options"
-            android:persistent="false"
-            android:title="@string/qs_panel_options_title"
-            android:summary="@string/qs_panel_options_summary"
-            android:fragment="com.blackiron.settings.fragments.QSPanelSettings" />
+    <org.blackiron.support.preferences.SecureSettingSwitchPreference
+        android:key="quick_settings_vibrate"
+        android:title="@string/quick_settings_vibrate_title"
+        android:summary="@string/quick_settings_vibrate_summary"
+        android:defaultValue="false"/>
+
+    <Preference
+        android:key="qs_panel_options"
+        android:persistent="false"
+        android:title="@string/qs_panel_options_title"
+        android:summary="@string/qs_panel_options_summary"
+        android:fragment="com.blackiron.settings.fragments.QSPanelSettings" />
 
      <PreferenceCategory
         android:key="quick_settings_footer_category"
