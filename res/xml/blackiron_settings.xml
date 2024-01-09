@@ -66,12 +66,12 @@
             android:fragment="com.blackiron.settings.fragments.PowerMenuSettings"
             android:icon="@drawable/ic_settings_powermenu"/>
 
-        <!-- Recents -->
-        <!--Preference
-            android:key="recents_category"
-            android:title="@string/recents_title"
-            android:fragment="com.blackiron.settings.fragments.RecentsSettings"
-            android:icon="@drawable/ic_settings_recents"/-->
+        <!-- Themes -->
+        <Preference
+            android:key="monet_settings"
+            android:title="@string/theme_title"
+            android:fragment="com.blackiron.settings.fragments.MonetSettings"
+            android:icon="@drawable/ic_settings_theme"/>
 
         <!-- Notifications -->
         <!--<Preference
