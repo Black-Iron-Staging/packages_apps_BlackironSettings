@@ -256,4 +256,13 @@
     <string name="brightness_slider_style_default">Default</string>
     <string name="brightness_slider_style_filled">Filled</string>
     <string name="brightness_slider_style_thin">Thin</string>
+
+    <!-- Secure quick settings category -->
+    <string name="secure_quick_settings">Security</string>
+    <!-- QSTile requires unlocking before being accessible -->
+    <string name="qstile_requires_unlocking_title">Require unlocking to use sensitive tiles</string>
+    <string name="qstile_requires_unlocking_summary">Ask to unlock lockscreen when using sensitive tiles</string>
+    <!-- Disable QS -->
+    <string name="disable_qs_title">Hide QS in secure lockscreen</string>
+    <string name="disable_qs_summary">Hides QS if device is locked. Does not disable notification shade</string>
 </resources>
