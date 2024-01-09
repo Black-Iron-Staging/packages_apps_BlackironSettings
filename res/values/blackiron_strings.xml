@@ -274,4 +274,8 @@
     <string name="reticker_colored_summary">Replace reTicker background color using notification app main color</string>
     <string name="reticker_landscape_only_title">Landscape only</string>
     <string name="reticker_landscape_only_summary">Only enable reTicker when device is in landscape mode</string>
+
+    <!-- Navbar styles -->
+    <string name="theme_customization_navbar_title">Navbar style</string>
+    <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 </resources>
