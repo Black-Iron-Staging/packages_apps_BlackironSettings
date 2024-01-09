@@ -41,6 +41,12 @@
          android:fragment="com.blackiron.settings.fragments.AmbientUI"
          android:title="@string/ambient_ui" />
 
+        <SwitchPreference
+            android:key="fingerprint_success_vib"
+            android:title="@string/fprint_sucess_vib_title"
+            android:summary="@string/fprint_sucess_vib_summary"
+            android:persistent="false" />
+
     <PreferenceCategory
         android:key="lockscreen_ui_charging_category"
         android:title="@string/charging_category">
