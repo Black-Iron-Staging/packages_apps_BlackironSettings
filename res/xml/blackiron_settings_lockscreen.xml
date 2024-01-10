@@ -37,6 +37,12 @@
         settings:controller="com.android.settings.display.PulseOnNewTracksPreferenceController" />
 
     <Preference
+        android:key="pulse_settings"
+        android:title="@string/pulse_settings"
+        android:summary="@string/pulse_settings_summary"
+        android:fragment="com.blackiron.settings.fragments.PulseSettings" />
+
+    <Preference
          android:key="ambient_ui"
          android:fragment="com.blackiron.settings.fragments.AmbientUI"
          android:title="@string/ambient_ui" />
