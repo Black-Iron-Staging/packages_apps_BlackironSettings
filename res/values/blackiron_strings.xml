@@ -297,4 +297,9 @@
     <string name="monet_engine_wallpaper_color_select_summary">Select a different accent color from your wallpaper</string>
     <string name="monet_engine_wallpaper_color_select_title">Wallpaper color selector</string>
     <string name="not_available">Not available</string>
+
+    <!-- User switcher -->
+    <string name="feature_flags_category">Feature flags</string>
+    <string name="lockscreen_user_switcher_title">User Switcher</string>
+    <string name="lockscreen_user_switcher_summary">Show user switcher when unlocking secured device\nRequires SystemUI restart</string>
 </resources>

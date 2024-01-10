@@ -80,4 +80,16 @@
         android:dependency="reticker_status" />
    </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="general_tweaks_general_category"
+        android:title="@string/feature_flags_category">
+
+    <org.blackiron.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.flags.enableBouncerUserSwitcher"
+        android:title="@string/lockscreen_user_switcher_title"
+        android:summary="@string/lockscreen_user_switcher_summary"
+        android:defaultValue="true" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>
