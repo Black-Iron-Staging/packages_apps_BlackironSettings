@@ -57,6 +57,12 @@
         android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
         settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
 
+    <org.blackiron.support.preferences.SecureSettingSwitchPreference
+        android:key="window_ignore_secure"
+        android:title="@string/ignore_window_secure_title"
+        android:summary="@string/ignore_window_secure_summary"
+        android:defaultValue="false"/>
+
     <PreferenceCategory
         android:key="reticker"
         android:title="@string/reticker_category" >
