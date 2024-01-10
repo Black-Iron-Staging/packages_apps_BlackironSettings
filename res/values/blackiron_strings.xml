@@ -319,4 +319,8 @@
     <string name="status_bar_lyric_title">Status bar lyric</string>
     <string name="status_bar_lyric_summary">Show lyric in status bar (need app support)</string>
     <string name="status_bar_show_lyric_title">Enable status bar lyric</string>
+
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Show roaming indicator icon</string>
+    <string name="roaming_indicator_icon_summary">Display roaming indicator above signal icon when in roaming mode</string>
 </resources>
