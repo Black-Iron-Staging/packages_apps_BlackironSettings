@@ -391,4 +391,8 @@
     <string name="notification_material_dismiss_summary">Replace clear all notification text with material style floating button</string>
     <string name="notification_material_dismiss_style_title">Button style</string>
     <string name="notification_material_dismiss_bgstyle_title">Button background</string>
+
+    <!-- QS Header -->
+    <string name="header_category">Header</string>
+    <string name="qs_header_image_title">Header Image</string>
 </resources>
