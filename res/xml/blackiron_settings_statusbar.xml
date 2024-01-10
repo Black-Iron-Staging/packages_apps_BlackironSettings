@@ -54,6 +54,12 @@
         android:summary="@string/status_bar_logo_summary"
         android:fragment="com.blackiron.settings.fragments.StatusBarLogo" />
 
+     <org.blackiron.support.preferences.SystemSettingSwitchPreference
+         android:key="data_disabled_icon"
+         android:title="@string/data_disabled_icon_title"
+         android:summary="@string/data_disabled_icon_summary"
+         android:defaultValue="true"/>
+
     <PreferenceCategory
         android:title="@string/status_bar_clock_title">
 
