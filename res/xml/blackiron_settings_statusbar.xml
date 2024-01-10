@@ -78,6 +78,11 @@
          android:summary="@string/show_wifi_standard_icon_summary"
          android:defaultValue="false"/>
 
+    <Preference
+        android:key="traffic"
+        android:fragment="com.blackiron.settings.fragments.NetworkTrafficSettings"
+        android:title="@string/traffic_title" />
+
     <PreferenceCategory
         android:title="@string/status_bar_clock_title">
 
