@@ -20,15 +20,4 @@
     android:title="@string/navbar_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
 
-    <com.blackiron.settings.preferences.SecureSettingSwitchPreference
-            android:key="sysui_nav_bar_inverse"
-            android:title="@string/navbar_invert_layout_title"
-            android:defaultValue="true" />
-
-    <Preference
-        android:key="android.theme.customization.navbar"
-        android:title="@string/theme_customization_navbar_title"
-        android:summary="@string/theme_customization_navbar_summary"
-        android:fragment="com.blackiron.settings.fragments.NavbarStyles"/>
-
 </PreferenceScreen>

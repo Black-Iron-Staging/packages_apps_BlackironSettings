@@ -35,15 +35,15 @@
         <Preference
             android:key="buttonsettings_category"
             android:title="@string/button_title"
-            android:fragment="com.blackiron.settings.fragments.ButtonSettings"
+            android:fragment="com.android.settings.blackiron.buttons.ButtonSettings"
             android:icon="@drawable/ic_settings_buttons"/>
 
         <!-- Navigation Bar -->
-        <Preference
+<!--        <Preference
             android:key="navigationbar_category"
             android:title="@string/navbar_title"
             android:fragment="com.blackiron.settings.fragments.NavbarSettings"
-            android:icon="@drawable/ic_settings_navbar"/>
+            android:icon="@drawable/ic_settings_navbar"/> -->
 
         <!-- Gestures -->
         <Preference
@@ -60,11 +60,11 @@
             android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Power Menu -->
-        <Preference
+<!--        <Preference
             android:key="powermenu__category"
             android:title="@string/powermenu_title"
             android:fragment="com.blackiron.settings.fragments.PowerMenuSettings"
-            android:icon="@drawable/ic_settings_powermenu"/>
+            android:icon="@drawable/ic_settings_powermenu"/> -->
 
         <!-- Themes -->
         <Preference
