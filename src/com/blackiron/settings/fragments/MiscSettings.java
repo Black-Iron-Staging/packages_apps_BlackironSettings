@@ -29,15 +29,27 @@ import com.android.settings.SettingsPreferenceFragment;
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
+    private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
+
+    private Preference mAlertSlider;
     private Preference mUserSwitcher;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         addPreferencesFromResource(R.xml.blackiron_settings_misc);
+
+        Context mContext = getActivity().getApplicationContext();
+        Resources res = mContext.getResources();
         PreferenceScreen prefSet = getPreferenceScreen();
         mUserSwitcher = findPreference("persist.sys.flags.enableBouncerUserSwitcher");
         mUserSwitcher.setOnPreferenceChangeListener(this);
+
+        mAlertSlider = (Preference) findPreference(ALERT_SLIDER_PREF);
+        boolean mAlertSliderAvailable = res.getBoolean(
+                com.android.internal.R.bool.config_hasAlertSlider);
+        if (!mAlertSliderAvailable)
+            prefSet.removePreference(mAlertSlider);
     }
 
     @Override
