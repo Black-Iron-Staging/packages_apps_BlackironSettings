@@ -25,14 +25,19 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 import com.android.settings.SettingsPreferenceFragment;
+import com.blackiron.settings.fragments.SmartPixels;
+
+
 
 public class MiscSettings extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
     private static final String ALERT_SLIDER_PREF = "alert_slider_notifications";
+    private static final String SMART_PIXELS = "smart_pixels";
 
     private Preference mAlertSlider;
     private Preference mUserSwitcher;
+    private Preference mSmartPixels;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -40,8 +45,8 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         addPreferencesFromResource(R.xml.blackiron_settings_misc);
 
         Context mContext = getActivity().getApplicationContext();
-        Resources res = mContext.getResources();
-        PreferenceScreen prefSet = getPreferenceScreen();
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+        final Resources res = getResources();
         mUserSwitcher = findPreference("persist.sys.flags.enableBouncerUserSwitcher");
         mUserSwitcher.setOnPreferenceChangeListener(this);
 
@@ -49,7 +54,13 @@ public class MiscSettings extends SettingsPreferenceFragment implements
         boolean mAlertSliderAvailable = res.getBoolean(
                 com.android.internal.R.bool.config_hasAlertSlider);
         if (!mAlertSliderAvailable)
-            prefSet.removePreference(mAlertSlider);
+            prefScreen.removePreference(mAlertSlider);
+
+        mSmartPixels = (Preference) prefScreen.findPreference(SMART_PIXELS);
+        boolean mSmartPixelsSupported = getResources().getBoolean(
+                com.android.internal.R.bool.config_supportSmartPixels);
+        if (!mSmartPixelsSupported)
+            prefScreen.removePreference(mSmartPixels);
     }
 
     @Override
