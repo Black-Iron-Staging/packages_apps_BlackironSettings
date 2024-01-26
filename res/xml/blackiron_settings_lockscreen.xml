@@ -42,11 +42,11 @@
         android:summary="@string/ambient_wake_gestures_summary"
         android:defaultValue="false" />
 
-    <SwitchPreference
+    <org.blackiron.support.preferences.SecureSettingSwitchPreference
         android:key="pulse_on_new_tracks"
         android:title="@string/pulse_on_new_tracks_title"
         android:summary="@string/pulse_on_new_tracks_summary"
-        settings:controller="com.android.settings.display.PulseOnNewTracksPreferenceController" />
+        android:defaultValue="true" />
 
     <Preference
         android:key="pulse_settings"
