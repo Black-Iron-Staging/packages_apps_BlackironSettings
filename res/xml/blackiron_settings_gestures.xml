@@ -39,6 +39,13 @@
         settings:controller="com.android.settings.gestures.OneHandedEnablePreferenceController" />
 
     <Preference
+        android:key="doze_double_tap_summary"
+        android:title="@string/double_tap_title"
+        android:fragment="com.android.settings.gestures.DoubleTapAmbientSettings"
+        settings:userRestriction="no_ambient_display"
+        settings:controller="com.android.settings.gestures.DoubleTapAmbientPreferenceController" />
+
+    <Preference
         android:key="gesture_power_menu_summary"
         android:title="@string/power_menu_setting_name"
         android:fragment="com.android.settings.gestures.PowerMenuSettings"
