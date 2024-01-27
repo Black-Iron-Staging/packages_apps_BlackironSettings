@@ -303,6 +303,7 @@
     <string name="theme_customization_navbar_summary">Set custom navigation bar style</string>
 
     <!-- Monet -->
+    <string name="monet_settings_title2">Monet</string>
     <string name="monet_settings_title">Theming settings</string>
     <string name="monet_settings_sammary">A few extra settings to customize monet engine</string>
     <string name="monet_engine_custom_color_title">Accent color</string>

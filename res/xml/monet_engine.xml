@@ -20,6 +20,9 @@
     android:key="monet_settings"
     android:title="@string/monet_settings_title" >
 
+    <PreferenceCategory
+        android:title="@string/monet_settings_title2">
+
     <org.blackiron.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_custom_color"
         android:title="@string/monet_engine_custom_color_title"
@@ -73,5 +76,7 @@
         android:title="@string/monet_engine_tint_background_title"
         android:summary="@string/monet_engine_tint_background_summary"
         android:defaultValue="false" />
+
+    </PreferenceCategory>
 
 </PreferenceScreen>
