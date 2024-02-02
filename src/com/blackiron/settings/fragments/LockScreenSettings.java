@@ -38,13 +38,17 @@ import android.provider.Settings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import com.android.internal.util.blackiron.BlackironUtils;
+
 public class LockScreenSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String FINGERPRINT_VIB = "fingerprint_success_vib";
+    private static final String KEY_UDFPS_ANIMATIONS = "udfps_recognizing_animation_preview";
 
     private FingerprintManager mFingerprintManager;
     private SwitchPreference mFingerprintVib;
+    private Preference mUdfpsAnimations;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -64,6 +68,11 @@ public class LockScreenSettings extends SettingsPreferenceFragment implements
                 Settings.System.FINGERPRINT_SUCCESS_VIB, 1) == 1));
         mFingerprintVib.setOnPreferenceChangeListener(this);
         }
+
+        mUdfpsAnimations = (Preference) findPreference(KEY_UDFPS_ANIMATIONS);
+        if (!BlackironUtils.isPackageInstalled(getContext(), "com.blackiron.udfps.resources")) {
+                getPreferenceScreen().removePreference(mUdfpsAnimations);
+        } 
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
