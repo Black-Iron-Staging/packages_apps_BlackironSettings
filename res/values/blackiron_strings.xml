@@ -461,4 +461,7 @@
     <string name="enable">Enable</string>
     <string name="udfps_recog_animation_effect_title">UDFPS custom animation</string>
     <string name="udfps_recog_animation_effect_summary">Choose animation effect</string>
+
+    <string name="unlock_category">Unlock</string>
+
 </resources>
