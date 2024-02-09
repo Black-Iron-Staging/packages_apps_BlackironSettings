@@ -35,6 +35,7 @@
     <string name="save">Save</string>
     <string name="advanced">Advanced</string>
     <string name="default_string">Default</string>
+    <string name="general_category">General</string>
 
     <!--  screen, setting option summary to change custom timeout -->
     <string name="custom_timeout_summary_never">Never</string>
