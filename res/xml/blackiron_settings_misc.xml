@@ -71,6 +71,17 @@
         android:fragment="com.blackiron.settings.fragments.SmartPixels" />
 
     <PreferenceCategory
+        android:title="@string/general_category">
+
+    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+         android:key="notification_sound_vib_screen_on"
+         android:title="@string/notification_sound_vib_screen_on_title"
+         android:summary="@string/notification_sound_vib_screen_on_summary"
+         android:defaultValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
         android:key="reticker"
         android:title="@string/reticker_category" >
 
