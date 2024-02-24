@@ -526,4 +526,11 @@
     <!-- Idle Manager -->
     <string name="idle_manager_title">Kill background processes</string>
     <string name="idle_manager_summary">Stop all non-essential background processes when the device is idle</string>
+
+     <!-- AOSP Gestures -->
+     <string name="aosp_gesture_preference">System settings</string>
+     <string name="aosp_gesture_summary">Stock gestures included with AOSP</string>
+
+     <!-- Navigation -->
+     <string name="system_navigation_summary">Configure navigation menus</string>
 </resources>
