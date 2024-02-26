@@ -36,16 +36,6 @@
         android:summary="@string/lockscreen_enable_power_menu_summary"
         android:defaultValue="true" />
 
-    <Preference
-         android:key="ambient_ui"
-         android:fragment="com.blackiron.settings.fragments.AmbientUI"
-         android:title="@string/ambient_ui" />
-
-    <SwitchPreference
-        android:key="fingerprint_success_vib"
-        android:title="@string/fprint_sucess_vib_title"
-        android:summary="@string/fprint_sucess_vib_summary"
-        android:persistent="false" />
 
     <org.blackiron.support.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
@@ -54,6 +44,11 @@
         android:entries="@array/screen_off_animation_entries"
         android:entryValues="@array/screen_off_animation_values"
         android:defaultValue="0" />
+
+    <Preference
+         android:key="ambient_ui"
+         android:fragment="com.blackiron.settings.fragments.AmbientUI"
+         android:title="@string/ambient_ui" />
 
     <PreferenceCategory
         android:key="lockscreen_ui_charging_category"
@@ -93,6 +88,12 @@
     <PreferenceCategory
         android:key="unlock_category"
         android:title="@string/unlock_category">
+
+    <SwitchPreference
+        android:key="fingerprint_success_vib"
+        android:title="@string/fprint_sucess_vib_title"
+        android:summary="@string/fprint_sucess_vib_summary"
+        android:persistent="false" />
 
     <org.blackiron.support.preferences.SystemSettingSwitchPreference
         android:key="auth_ripple_enabled"
