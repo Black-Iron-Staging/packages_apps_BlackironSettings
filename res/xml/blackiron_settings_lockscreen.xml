@@ -36,24 +36,6 @@
         android:summary="@string/lockscreen_enable_power_menu_summary"
         android:defaultValue="true" />
 
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
-        android:key="ambient_wake_gestures"
-        android:title="@string/ambient_wake_gestures_title"
-        android:summary="@string/ambient_wake_gestures_summary"
-        android:defaultValue="false" />
-
-    <org.blackiron.support.preferences.SecureSettingSwitchPreference
-        android:key="pulse_on_new_tracks"
-        android:title="@string/pulse_on_new_tracks_title"
-        android:summary="@string/pulse_on_new_tracks_summary"
-        android:defaultValue="true" />
-
-    <Preference
-        android:key="pulse_settings"
-        android:title="@string/pulse_settings"
-        android:summary="@string/pulse_settings_summary"
-        android:fragment="com.blackiron.settings.fragments.PulseSettings" />
-
     <Preference
          android:key="ambient_ui"
          android:fragment="com.blackiron.settings.fragments.AmbientUI"
