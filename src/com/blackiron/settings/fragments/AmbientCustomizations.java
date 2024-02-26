@@ -65,17 +65,12 @@ public class AmbientCustomizations extends SettingsPreferenceFragment implements
     private static final String AMBIENT_TEXT_ALIGNMENT = "ambient_text_alignment";
     private static final String AMBIENT_TEXT_TYPE_COLOR = "ambient_text_type_color";
     private static final String AMBIENT_TEXT_COLOR = "ambient_text_color";
-    private static final String FILE_AMBIENT_SELECT = "file_ambient_select";
-
-    private static final int REQUEST_PICK_IMAGE = 0;
 
     private SystemSettingEditTextPreference mAmbientText;
     private ListPreference mAmbientTextAlign;
     private ListPreference mAmbientTextFonts;
     private ListPreference mAmbientTextTypeColor;
     private ColorPickerPreference mAmbientTextColor;
-
-    private Preference mAmbientImage;
 
     @Override
     public void onCreate(Bundle icicle) {
@@ -113,19 +108,6 @@ public class AmbientCustomizations extends SettingsPreferenceFragment implements
         }
         mAmbientTextColor.setNewPreviewColor(ambientTextColor);
 
-        mAmbientImage = findPreference(FILE_AMBIENT_SELECT);
-
-    }
-
-    @Override
-    public boolean onPreferenceTreeClick(Preference preference) {
-        if (preference == mAmbientImage) {
-            Intent intent = new Intent(Intent.ACTION_PICK);
-            intent.setType("image/*");
-            startActivityForResult(intent, REQUEST_PICK_IMAGE);
-            return true;
-        }
-        return super.onPreferenceTreeClick(preference);
     }
 
     @Override
@@ -169,17 +151,6 @@ public class AmbientCustomizations extends SettingsPreferenceFragment implements
             return true;
         }
         return false;
-    }
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent result) {
-        if (requestCode == REQUEST_PICK_IMAGE) {
-            if (resultCode != Activity.RESULT_OK) {
-                return;
-            }
-            final Uri imageUri = result.getData();
-            Settings.System.putString(getContentResolver(), Settings.System.AMBIENT_CUSTOM_IMAGE, imageUri.toString());
-        }
     }
 
     @Override

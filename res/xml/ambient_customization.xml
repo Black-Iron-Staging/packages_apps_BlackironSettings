@@ -75,20 +75,4 @@
             android:dependency="ambient_text"
             android:persistent="false" />
 
-    <PreferenceCategory
-        android:title="@string/ambient_image_category" />
-
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
-            android:key="ambient_image"
-            android:title="@string/ambient_image_title"
-            android:defaultValue="false" />
-
-        <Preference
-            android:key="file_ambient_select"
-            android:title="@string/file_header_select_title"
-            android:summary="@string/file_header_select_summary"
-            android:persistent="false"
-            android:dependency="ambient_image" >
-        </Preference>
-
 </PreferenceScreen>
