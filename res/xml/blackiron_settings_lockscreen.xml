@@ -16,7 +16,30 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/lockscreen_title"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <Preference
+        android:key="lockscreen_preview"
+        settings:layout="@layout/lockscreen_preview" />
+
+    <PreferenceCategory
+        android:title="Custom Lockscreen Clock">
+
+        <org.blackiron.support.preferences.SystemSettingListPreference
+            android:entries="@array/clock_style_entries"
+            android:title="@string/clock_style_title"
+            android:key="clock_style"
+            android:defaultValue="0"
+            android:entryValues="@array/clock_style_values" />
+
+        <org.blackiron.support.preferences.SecureSettingSwitchPreference
+            android:key="lockscreen_double_line_clock_switch"
+            android:title="@string/lockscreen_double_line_clock_setting_toggle"
+            android:summary="@string/lockscreen_double_line_clock_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
 
     <org.blackiron.support.preferences.SystemSettingSwitchPreference
         android:key="wake_when_plugged_or_unplugged"
