@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021-2023 crDroid Android Project
+     Copyright (C) 2021-2024 BlackIron Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,25 +18,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="monet_settings"
-    android:title="@string/monet_settings_title" >
+    android:title="@string/monet_title">
 
-    <PreferenceCategory
-        android:title="@string/volume_style_title">
-
-    <!-- Volume Styles -->      
-    <org.blackiron.support.preferences.SystemSettingListPreference
-        android:key="custom_volume_styles"
-        android:title="@string/volume_style_title"
-        android:dialogTitle="@string/volume_style_title"
-        android:entries="@array/volume_styles_entries"
-        android:entryValues="@array/volume_styles_values"
-        android:summary="%s"
-        android:defaultValue="2" />
-
-    </PreferenceCategory>
-
-    <PreferenceCategory
-        android:title="@string/monet_settings_title2">
+    <ListPreference
+        android:key="theme_style"
+        android:title="@string/monet_engine_style_title"
+        android:entries="@array/monet_engine_style_entries"
+        android:entryValues="@array/monet_engine_style_values"
+        android:defaultValue="0" />
 
     <org.blackiron.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_custom_color"
@@ -44,17 +33,11 @@
         android:summary="@string/monet_engine_custom_color_summary"
         android:defaultValue="false" />
 
-    <org.blackiron.support.colorpicker.SecureSettingColorPickerPreference
+    <org.blackiron.support.preferences.colorpicker.SecureSettingColorPickerPreference
         android:key="monet_engine_color_override"
         android:title="@string/monet_engine_color_override_title"
         android:dependency="monet_engine_custom_color"
         android:defaultValue="0xFF1b6ef3" />
-
-    <Preference
-        android:key="monet_engine_wall_color_select"
-        android:title="@string/monet_engine_wallpaper_color_select_title"
-        android:dependency="monet_engine_custom_color"
-        android:summary="@string/monet_engine_wallpaper_color_select_summary" />
 
     <org.blackiron.support.preferences.SecureSettingSwitchPreference
         android:key="monet_engine_custom_bgcolor"
@@ -62,7 +45,7 @@
         android:summary="@string/monet_engine_custom_bgcolor_summary"
         android:defaultValue="false" />
 
-    <org.blackiron.support.colorpicker.SecureSettingColorPickerPreference
+    <org.blackiron.support.preferences.colorpicker.SecureSettingColorPickerPreference
         android:key="monet_engine_bgcolor_override"
         android:title="@string/monet_engine_color_override_title"
         android:dependency="monet_engine_custom_bgcolor"
@@ -91,7 +74,5 @@
         android:title="@string/monet_engine_tint_background_title"
         android:summary="@string/monet_engine_tint_background_summary"
         android:defaultValue="false" />
-
-    </PreferenceCategory>
 
 </PreferenceScreen>

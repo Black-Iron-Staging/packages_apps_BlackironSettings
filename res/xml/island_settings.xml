@@ -25,13 +25,13 @@
         android:title="@string/island_notification_title"
         android:summary="@string/island_notification_summary"
         android:defaultValue="false" />
-        
+
     <org.blackiron.support.preferences.SystemSettingSwitchPreference
         android:key="island_notification_now_playing"
         android:title="@string/island_notification_now_playing_title"
         android:summary="@string/island_notification_now_playing_summary"
         android:dependency="island_notification"
-        android:defaultValue="false" />
+        android:defaultValue="true" />
 
     <com.android.settingslib.widget.FooterPreference
         android:key="island_notification_footer"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2022 Blackiron
+     Copyright (C) 2016-2024 BlackIron Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -20,17 +20,17 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/pulse_settings" >
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="navbar_pulse_enabled"
         android:title="@string/show_navbar_pulse_title"
         android:summary="@string/show_navbar_pulse_summary"/>
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="lockscreen_pulse_enabled"
         android:title="@string/show_lockscreen_pulse_title"
         android:summary="@string/show_lockscreen_pulse_summary"/>
 
-    <SwitchPreference
+    <SwitchPreferenceCompat
         android:key="ambient_pulse_enabled"
         android:title="@string/show_ambient_pulse_title"
         android:summary="@string/show_ambient_pulse_summary"/>
@@ -41,27 +41,6 @@
         android:entries="@array/pulse_render_mode_entries"
         android:entryValues="@array/pulse_render_mode_values"
         android:defaultValue="1"/>
-
-
-    <org.blackiron.support.preferences.SecureSettingSwitchPreference
-        android:key="pulse_custom_gravity"
-        android:title="@string/pulse_custom_gravity_title"
-        android:entries="@array/pulse_custom_gravity_entries"
-        android:entryValues="@array/pulse_custom_gravity_values"
-        android:summary="%s"
-        android:defaultValue="0"/>
-
-    <org.blackiron.support.preferences.SecureSettingSwitchPreference
-        android:key="visualizer_center_mirrored"
-        android:title="@string/visualizer_center_mirrored_title"
-        android:summary="@string/visualizer_center_mirrored_summary"
-        android:defaultValue="false"/>
-
-    <org.blackiron.support.preferences.SecureSettingSwitchPreference
-        android:key="pulse_vertical_mirror"
-        android:title="@string/pulse_vertical_mirror_title"
-        android:summary="@string/pulse_vertical_mirror_summary"
-        android:defaultValue="false"/>
 
     <org.blackiron.support.preferences.SecureSettingSwitchPreference
         android:key="pulse_smoothing_enabled"
@@ -76,7 +55,7 @@
         android:entryValues="@array/pulse_color_mode_values"
         android:defaultValue="2"/>
 
-    <org.blackiron.support.colorpicker.SecureSettingColorPickerPreference
+    <org.blackiron.support.preferences.colorpicker.SecureSettingColorPickerPreference
         android:key="pulse_color_user"
         android:title="@string/pulse_color_user_title"
         android:defaultValue="0x92FFFFFF"/>
@@ -143,8 +122,8 @@
     <PreferenceCategory
         android:key="pulse_2"
         android:title="@string/pulse_solid_dimen_category">
-		
-	<org.blackiron.support.preferences.SecureSettingSwitchPreference
+
+        <org.blackiron.support.preferences.SecureSettingSwitchPreference
             android:key="pulse_solid_units_rounded"
             android:title="@string/pulse_solid_units_rounded_title"
             android:summary="@string/pulse_solid_units_rounded_summary"

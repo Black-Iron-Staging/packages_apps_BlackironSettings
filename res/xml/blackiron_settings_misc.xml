@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2016 Black Iron
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2016-2024 BlackIron Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,96 +15,86 @@
      limitations under the License.
 -->
 <PreferenceScreen
-        xmlns:android="http://schemas.android.com/apk/res/android"
-	android:title="@string/misc_title"
-        xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <!-- Gaming mode -->
     <Preference
-            android:title="@string/radio_info_title"
-            android:key="radio_info_settings">
-        <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.phone"
-                android:targetClass="com.android.phone.settings.RadioInfo" />
+        android:key="gaming_mode"
+        android:icon="@drawable/ic_gaming"
+        android:title="@string/gaming_mode_title"
+        android:summary="@string/gaming_mode_summary">
+
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="io.chaldeaprjkt.gamespace"
+            android:targetClass="io.chaldeaprjkt.gamespace.settings.SettingsActivity" />
     </Preference>
 
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
-        android:key="arcane_idle_manager"
-        android:title="@string/idle_manager_title"
-        android:summary="@string/idle_manager_summary"
+    <!-- Unlock FPS for specific games -->
+    <org.blackiron.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.games"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/use_games_spoof_title"
+        android:summary="@string/use_games_spoof_summary" />
+
+    <!-- Unlimited google photos storage -->
+    <org.blackiron.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.gphotos"
+        android:icon="@drawable/ic_backup"
+        android:title="@string/use_photos_spoof_title"
+        android:summary="@string/use_photos_spoof_summary"
+        android:defaultValue="true" />
+
+    <!-- Netflix -->
+    <org.blackiron.support.preferences.SystemPropertySwitchPreference
+        android:key="persist.sys.pixelprops.netflix"
+        android:icon="@drawable/ic_netflix"
+        android:title="@string/netflix_spoof_title"
+        android:summary="@string/netflix_spoof_summary"
         android:defaultValue="false" />
 
-    <ListPreference
-        android:key="wifi_timeout"
-        android:title="@string/wifi_timeout"
-        android:summary="@string/wifi_timeout_summary"
-        android:entries="@array/wifi_timeout_entries"
-        android:entryValues="@array/wifi_timeout_values"
-        settings:controller="com.android.settings.wifi.WifiTimeoutPreferenceController"/>
-
-    <androidx.preference.ListPreference
-        android:key="bluetooth_timeout"
-        android:title="@string/bluetooth_timeout"
-        android:summary="@string/summary_placeholder"
-        android:entries="@array/bluetooth_timeout_entries"
-        android:entryValues="@array/bluetooth_timeout_values"
-        settings:controller="com.android.settings.bluetooth.BluetoothTimeoutPreferenceController"/>
-
-    <ListPreference
-        android:key="device_reboot_timeout"
-        android:entries="@array/device_reboot_timeout_entries"
-        android:entryValues="@array/device_reboot_timeout_values"
-        android:summary="@string/device_reboot_timeout_summary"
-        android:title="@string/device_reboot_timeout_title"
-        settings:controller="com.android.settings.security.DeviceRebootTimeoutPreferenceController" />
-
-     <Preference
-        android:key="display_cutout_force_fullscreen_settings"
-        android:title="@string/display_cutout_force_fullscreen_title"
-        android:summary="@string/display_cutout_force_fullscreen_summary"
-        android:fragment="com.android.settings.display.DisplayCutoutForceFullscreenSettings"
-        settings:controller="com.android.settings.display.DisplayCutoutForceFullscreenPreferenceController" />
-
-    <org.blackiron.support.preferences.SecureSettingSwitchPreference
-        android:key="window_ignore_secure"
-        android:title="@string/ignore_window_secure_title"
-        android:summary="@string/ignore_window_secure_summary"
-        android:defaultValue="false"/>
-
-	<!-- Smart Pixels -->
+    <!-- Google services
     <Preference
-        android:key="smart_pixels"
-        android:title="@string/smart_pixels_title" 
-        android:summary="@string/smart_pixels_summary" 
-        android:fragment="com.blackiron.settings.fragments.SmartPixels" />
+        android:key="gms_enabled_settings"
+        android:icon="@drawable/ic_google"
+        android:title="@string/gms_enabled_title"
+        android:summary="@string/gms_enabled_summary"
+        android:fragment="com.blackiron.settings.fragments.misc.GmsSwitch"/> -->
 
-    <PreferenceCategory
-        android:title="@string/general_category">
+    <!-- Parallel space
+    <Preference
+        android:key="parallel_space"
+        android:icon="@drawable/ic_parallel_space"
+        android:title="@string/laboratory_parallel_space_title"
+        android:summary="@string/laboratory_parallel_space_summary">
+        <intent
+            android:targetPackage="ink.kscope.parallelspace"
+            android:targetClass="ink.kscope.parallelspace.MainActivity" />
+    </Preference> -->
 
+    <!-- Three-fingers-swipe to screenshot -->
     <org.blackiron.support.preferences.SystemSettingSwitchPreference
-         android:key="notification_sound_vib_screen_on"
-         android:title="@string/notification_sound_vib_screen_on_title"
-         android:summary="@string/notification_sound_vib_screen_on_summary"
-         android:defaultValue="true" />
+        android:key="three_finger_gesture"
+        android:icon="@drawable/ic_three_finger_gesture"
+        android:title="@string/three_finger_gesture"
+        android:summary="@string/three_finger_gesture_summary"
+        android:defaultValue="false" />
 
-    </PreferenceCategory>
+    <!-- Sensor block per package -->
+    <Preference
+        android:key="sensor_block_settings"
+        android:icon="@drawable/ic_remote"
+        android:title="@string/sensor_block_title"
+        android:summary="@string/sensor_block_summary"
+        android:fragment="com.blackiron.settings.fragments.misc.SensorBlock"/>
 
-    <!-- Alert Slider Notifications -->
+    <!-- Pocket Judge -->
     <org.blackiron.support.preferences.SystemSettingSwitchPreference
-        android:key="alert_slider_notifications"
-        android:title="@string/alert_slider_notifications_title"
-        android:summary="@string/alert_slider_notifications_summary"
-        android:defaultValue="true" />
-
-    <PreferenceCategory
-        android:key="general_tweaks_general_category"
-        android:title="@string/feature_flags_category">
-
-    <org.blackiron.support.preferences.SystemPropertySwitchPreference
-        android:key="persist.sys.flags.enableBouncerUserSwitcher"
-        android:title="@string/lockscreen_user_switcher_title"
-        android:summary="@string/lockscreen_user_switcher_summary"
-        android:defaultValue="true" />
-
-    </PreferenceCategory>
+        android:key="pocket_judge"
+        android:icon="@drawable/ic_pocket"
+        android:title="@string/pocket_judge_title"
+        android:summary="@string/pocket_judge_summary"
+        android:defaultValue="false" />
 
 </PreferenceScreen>
