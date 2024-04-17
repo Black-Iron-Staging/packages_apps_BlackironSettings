@@ -31,7 +31,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.blackiron.support.preferences.colorpicker.ColorPickerPreference;
+import com.blackiron.settings.preferences.colorpicker.ColorPickerPreference;
 
 public class PulseSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {

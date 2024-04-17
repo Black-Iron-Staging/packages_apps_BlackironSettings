@@ -31,14 +31,14 @@
             android:fragment="com.blackiron.settings.fragments.quicksettings.QsHeaderImageSettings" />
 
         <!-- QS clock
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="show_qs_clock"
             android:icon="@drawable/ic_clock"
             android:title="@string/qs_clock_title"
             android:summary="@string/qs_clock_summary"
             android:defaultValue="true" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_header_clock_size"
             android:icon="@drawable/ic_font"
             android:title="@string/clock_font_size_title"
@@ -50,7 +50,7 @@
             settings:units="@string/unit_pixels" /> -->
 
         <!-- QS date
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="show_qs_date"
             android:icon="@drawable/ic_calendar"
             android:title="@string/qs_date_title"
@@ -58,7 +58,7 @@
             android:defaultValue="true" /> -->
 
         <!-- Battery styles -->
-        <org.blackiron.support.preferences.SystemSettingListPreference
+        <com.blackiron.settings.preferences.SystemSettingListPreference
             android:key="qs_battery_style"
             android:icon="@drawable/ic_battery"
             android:title="@string/status_bar_battery_style_title"
@@ -67,7 +67,7 @@
             android:defaultValue="-1" />
 
         <!-- Battery location
-        <org.blackiron.support.preferences.SystemSettingListPreference
+        <com.blackiron.settings.preferences.SystemSettingListPreference
             android:key="qs_battery_location"
             android:icon="@drawable/ic_battery"
             android:title="@string/qs_battery_location_title"
@@ -76,7 +76,7 @@
             android:defaultValue="0" /> -->
 
         <!-- Battery percent -->
-        <org.blackiron.support.preferences.SystemSettingListPreference
+        <com.blackiron.settings.preferences.SystemSettingListPreference
             android:key="qs_show_battery_percent"
             android:icon="@drawable/ic_battery_alert"
             android:title="@string/status_bar_battery_percent_title"
@@ -85,26 +85,26 @@
             android:defaultValue="2" />
 
         <!-- Battery estimate
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_show_battery_estimate"
             android:icon="@drawable/ic_timelapse_cr"
             android:title="@string/battery_estimate_title"
             android:summary="@string/battery_estimate_summary" /> -->
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="secure_lockscreen_qs_disabled"
             android:icon="@drawable/ic_lock_alert"
             android:title="@string/disable_qs_title"
             android:summary="@string/disable_qs_summary"/>
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_dual_tone"
             android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_dual_tone_title"
             android:summary="@string/qs_dual_tone_summary"
             android:defaultValue="true" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_transparency"
             android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_opacity_title"
@@ -115,7 +115,7 @@
             android:max="100"
             android:min="1" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_footer_transparency"
             android:icon="@drawable/ic_color_bucket"
             android:title="@string/qs_footer_opacity_title"
@@ -148,7 +148,7 @@
             android:entryValues="@array/qs_brightness_slider_position_values"
             android:defaultValue="0" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_brightness_slider_haptic"
             android:icon="@drawable/ic_brightness"
             android:title="@string/qs_brightness_slider_haptic_title"
@@ -183,14 +183,14 @@
             android:entryValues="@array/qs_panel_style_values"
             android:defaultValue="0" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_label_hide"
             android:icon="@drawable/ic_text"
             android:title="@string/qs_tile_label_hide_title"
             android:summary="@string/qs_tile_label_hide_summary"
             android:defaultValue="false" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_tile_label_size"
             android:icon="@drawable/ic_text"
             android:title="@string/qs_tile_label_size_title"
@@ -200,14 +200,14 @@
             settings:units="sp"
             android:defaultValue="14" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_tile_vertical_layout"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_tile_layout_title"
             android:summary="@string/qs_tile_layout_summary"
             android:defaultValue="false" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_layout_columns"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_portrait_title"
@@ -216,7 +216,7 @@
             settings:interval="1"
             android:defaultValue="2" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_layout_columns_landscape"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qs_columns_landscape_title"
@@ -225,7 +225,7 @@
             settings:interval="1"
             android:defaultValue="4" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qqs_layout_rows"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qqs_rows_portrait_title"
@@ -234,7 +234,7 @@
             settings:interval="1"
             android:defaultValue="2" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qqs_layout_rows_landscape"
             android:icon="@drawable/ic_qs_tile"
             android:title="@string/qqs_rows_landscape_title"
@@ -247,7 +247,7 @@
     <PreferenceCategory
         android:title="@string/qs_tile_animation_title">
 
-        <org.blackiron.support.preferences.SystemSettingListPreference
+        <com.blackiron.settings.preferences.SystemSettingListPreference
             android:key="qs_tile_animation_style"
             android:icon="@drawable/ic_qs_tile_animation_style"
             android:title="@string/qs_tile_animation_style_title"
@@ -255,7 +255,7 @@
             android:entryValues="@array/qs_tile_animation_style_values"
             android:defaultValue="0" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="qs_tile_animation_duration"
             android:icon="@drawable/ic_clock"
             android:title="@string/qs_tile_animation_duration_title"
@@ -265,7 +265,7 @@
             android:max="5"
             android:min="1" />
 
-        <org.blackiron.support.preferences.SystemSettingListPreference
+        <com.blackiron.settings.preferences.SystemSettingListPreference
             android:key="qs_tile_animation_interpolator"
             android:icon="@drawable/ic_qs_tile_animation_interpolator"
             android:title="@string/qs_tile_animation_interpolator_title"
@@ -278,50 +278,50 @@
     <PreferenceCategory 
          android:title="@string/qs_footer_category">
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_show_data_usage"
             android:icon="@drawable/ic_swap_vertical"
             android:title="@string/qs_footer_datausage_title"
             android:summary="@string/qs_footer_datausage_summary" />
 
-        <!--<org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <!--<com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_warnings"
             android:icon="@drawable/ic_key"
             android:title="@string/qs_footer_warnings_title"
             android:summary="@string/qs_footer_warnings_summary"
             android:defaultValue="true"/>
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_user"
             android:icon="@drawable/ic_account"
             android:title="@string/qs_footer_users_icon_title"
             android:summary="@string/qs_footer_users_icon_summary"
             android:defaultValue="true" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_edit"
             android:icon="@drawable/ic_pencil"
             android:title="@string/qs_footer_edit_icon_title"
             android:defaultValue="true" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_power_menu"
             android:icon="@drawable/ic_power"
             android:title="@string/qs_footer_show_power_menu_title"
             android:defaultValue="true" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_services"
             android:icon="@drawable/ic_services"
             android:title="@string/qs_footer_services_icon_title" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="qs_footer_show_settings"
             android:icon="@drawable/ic_settings_main"
             android:title="@string/qs_footer_settings_icon_title"
             android:defaultValue="true" />-->
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="notification_material_dismiss"
             android:icon="@drawable/ic_notification_clear_all"
             android:title="@string/notification_material_dismiss_title"

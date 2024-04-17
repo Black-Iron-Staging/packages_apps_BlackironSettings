@@ -33,7 +33,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
 
-import org.blackiron.support.preferences.CustomSeekBarPreference;
+import com.blackiron.settings.preferences.CustomSeekBarPreference;
 
 public class NetworkTrafficSettings extends SettingsPreferenceFragment
         implements Preference.OnPreferenceChangeListener  {

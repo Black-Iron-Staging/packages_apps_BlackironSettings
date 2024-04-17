@@ -45,7 +45,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.blackiron.settings.fragments.ui.doze.EdgeLightSettings;
 import com.blackiron.settings.fragments.ui.doze.Utils;
-import org.blackiron.support.preferences.SecureSettingSeekBarPreference;
+import com.blackiron.settings.preferences.SecureSettingSeekBarPreference;
 
 import java.util.List;
 import java.util.ArrayList;

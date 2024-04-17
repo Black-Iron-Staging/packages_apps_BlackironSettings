@@ -32,7 +32,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.blackiron.support.preferences.SecureSettingListPreference;
+import com.blackiron.settings.preferences.SecureSettingListPreference;
 
 import java.time.format.DateTimeFormatter;
 import java.time.LocalTime;

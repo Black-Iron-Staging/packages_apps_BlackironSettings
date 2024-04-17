@@ -38,7 +38,7 @@ import androidx.preference.PreferenceManager;
 
 import com.android.settings.R;
 
-import org.blackiron.support.preferences.CustomDialogPref;
+import com.blackiron.settings.preferences.CustomDialogPref;
 import com.blackiron.settings.utils.DeviceUtils;
 
 import lineageos.providers.LineageSettings;

@@ -40,7 +40,7 @@ import com.android.settingslib.search.SearchIndexable;
 
 import com.blackiron.settings.fragments.buttons.ButtonBacklightBrightness;
 import com.blackiron.settings.fragments.buttons.PowerMenuActions;
-import org.blackiron.support.preferences.LineageSystemSettingSeekBarPreference;
+import com.blackiron.settings.preferences.LineageSystemSettingSeekBarPreference;
 import com.blackiron.settings.utils.DeviceUtils;
 import com.blackiron.settings.utils.TelephonyUtils;
 

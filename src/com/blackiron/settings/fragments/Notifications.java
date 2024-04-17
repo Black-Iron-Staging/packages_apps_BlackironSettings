@@ -40,7 +40,7 @@ import com.android.settingslib.search.SearchIndexable;
 import com.android.internal.util.blackiron.Utils;
 
 import com.blackiron.settings.fragments.notifications.IslandSettings;
-import org.blackiron.support.preferences.CustomSeekBarPreference;
+import com.blackiron.settings.preferences.CustomSeekBarPreference;
 
 import java.util.List;
 

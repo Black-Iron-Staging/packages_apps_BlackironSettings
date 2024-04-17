@@ -48,8 +48,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.blackiron.support.preferences.PackageListAdapter;
-import org.blackiron.support.preferences.PackageListAdapter.PackageItem;
+import com.blackiron.settings.preferences.PackageListAdapter;
+import com.blackiron.settings.preferences.PackageListAdapter.PackageItem;
 
 import java.util.ArrayList;
 import java.util.HashMap;

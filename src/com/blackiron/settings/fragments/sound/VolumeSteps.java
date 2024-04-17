@@ -29,7 +29,7 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.blackiron.support.preferences.CustomSeekBarPreference;
+import com.blackiron.settings.preferences.CustomSeekBarPreference;
 
 public class VolumeSteps extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {

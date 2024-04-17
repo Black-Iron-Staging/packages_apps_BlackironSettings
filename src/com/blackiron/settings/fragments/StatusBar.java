@@ -35,14 +35,14 @@ import androidx.preference.SwitchPreferenceCompat;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
-import org.blackiron.support.preferences.SystemSettingListPreference;
+import com.blackiron.settings.preferences.SystemSettingListPreference;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.blackiron.settings.fragments.statusbar.BatteryBar;
 import com.blackiron.settings.fragments.statusbar.Clock;
 import com.blackiron.settings.fragments.statusbar.NetworkTrafficSettings;
-import org.blackiron.support.preferences.SystemSettingSeekBarPreference;
+import com.blackiron.settings.preferences.SystemSettingSeekBarPreference;
 import com.blackiron.settings.utils.DeviceUtils;
 
 import lineageos.preference.LineageSystemSettingListPreference;

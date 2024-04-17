@@ -44,8 +44,8 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.internal.logging.nano.MetricsProto;
-import org.blackiron.support.preferences.PackageListAdapter;
-import org.blackiron.support.preferences.PackageListAdapter.PackageItem;
+import com.blackiron.settings.preferences.PackageListAdapter;
+import com.blackiron.settings.preferences.PackageListAdapter.PackageItem;
 
 import org.lineageos.internal.notification.LightsCapabilities;
 

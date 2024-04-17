@@ -38,7 +38,7 @@ import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
 import com.blackiron.settings.fragments.quicksettings.QsHeaderImageSettings;
-import org.blackiron.support.preferences.CustomSeekBarPreference;
+import com.blackiron.settings.preferences.CustomSeekBarPreference;
 
 import lineageos.providers.LineageSettings;
 

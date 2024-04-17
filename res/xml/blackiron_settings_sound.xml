@@ -36,7 +36,7 @@
         android:fragment="com.blackiron.settings.fragments.sound.VolumeSteps" />
 
     <!-- Screenshot Sound  -->
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="screenshot_shutter_sound"
         android:icon="@drawable/ic_cellphone_sound"
         android:title="@string/screenshot_shutter_sound_title"
@@ -61,7 +61,7 @@
             android:icon="@drawable/ic_settings_sound"
             android:title="@string/volume_panel_on_left_title" />
 
-        <org.blackiron.support.preferences.SecureSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SecureSettingSeekBarPreference
             android:key="volume_dialog_dismiss_timeout"
             android:icon="@drawable/ic_music_note"
             android:title="@string/volume_dialog_timeout_title"
@@ -77,19 +77,19 @@
         android:key="incall_vib_options"
         android:title="@string/incall_vibration_category" >
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_connect"
             android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_connect_title"
             android:defaultValue="false" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_callwaiting"
             android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_call_wait_title"
             android:defaultValue="false" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="vibrate_on_disconnect"
             android:icon="@drawable/ic_vibrate"
             android:title="@string/incall_vibrate_disconnect_title"

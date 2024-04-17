@@ -25,7 +25,7 @@
         android:title="@string/navbar_visibility_title"
         android:summary="@string/navbar_visibility_summary" />
 
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="pixel_nav_animation"
         android:icon="@drawable/ic_google_circles"
         android:title="@string/pixel_navbar_anim_title"
@@ -45,7 +45,7 @@
             android:summary="@string/navbar_arrow_keys_summary"
             android:defaultValue="false" />
 
-        <org.blackiron.support.preferences.SecureSettingListPreference
+        <com.blackiron.settings.preferences.SecureSettingListPreference
             android:key="navbar_layout_views"
             android:icon="@drawable/ic_navbar_layout"
             android:title="@string/navbar_layout_title"
@@ -54,7 +54,7 @@
             android:entryValues="@array/navbar_layout_values"
             android:defaultValue="default" />
 
-        <org.blackiron.support.preferences.SecureSettingSwitchPreference
+        <com.blackiron.settings.preferences.SecureSettingSwitchPreference
             android:key="navbar_inverse_layout"
             android:icon="@drawable/ic_navbar_layout"
             android:title="@string/navbar_invert_layout_title"

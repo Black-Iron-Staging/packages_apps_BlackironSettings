@@ -28,7 +28,7 @@
         android:fragment="com.blackiron.settings.fragments.ui.DozeSettings" />
 
     <!-- Charging animation -->
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="charging_animation"
         android:icon="@drawable/ic_battery_charging"
         android:title="@string/charging_animation_title"
@@ -47,7 +47,7 @@
     </Preference>
 
     <!-- Screen Off animation -->
-    <org.blackiron.support.preferences.SystemSettingListPreference
+    <com.blackiron.settings.preferences.SystemSettingListPreference
         android:key="screen_off_animation"
         android:icon="@drawable/ic_television_classic"
         android:title="@string/screen_off_animation_title"
@@ -121,7 +121,7 @@
         android:fragment="com.blackiron.settings.fragments.ui.IconShapes"/>
 
     <!-- Rotation button -->
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="enable_rotation_button"
         android:icon="@drawable/ic_rotation"
         android:title="@string/floating_rotation_button_title"

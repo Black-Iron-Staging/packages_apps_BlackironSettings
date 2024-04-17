@@ -32,14 +32,14 @@
     </Preference>
 
     <!-- Unlock FPS for specific games -->
-    <org.blackiron.support.preferences.SystemPropertySwitchPreference
+    <com.blackiron.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.games"
         android:icon="@drawable/ic_backup"
         android:title="@string/use_games_spoof_title"
         android:summary="@string/use_games_spoof_summary" />
 
     <!-- Unlimited google photos storage -->
-    <org.blackiron.support.preferences.SystemPropertySwitchPreference
+    <com.blackiron.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.gphotos"
         android:icon="@drawable/ic_backup"
         android:title="@string/use_photos_spoof_title"
@@ -47,7 +47,7 @@
         android:defaultValue="true" />
 
     <!-- Netflix -->
-    <org.blackiron.support.preferences.SystemPropertySwitchPreference
+    <com.blackiron.settings.preferences.SystemPropertySwitchPreference
         android:key="persist.sys.pixelprops.netflix"
         android:icon="@drawable/ic_netflix"
         android:title="@string/netflix_spoof_title"
@@ -74,7 +74,7 @@
     </Preference> -->
 
     <!-- Three-fingers-swipe to screenshot -->
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="three_finger_gesture"
         android:icon="@drawable/ic_three_finger_gesture"
         android:title="@string/three_finger_gesture"
@@ -90,7 +90,7 @@
         android:fragment="com.blackiron.settings.fragments.misc.SensorBlock"/>
 
     <!-- Pocket Judge -->
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="pocket_judge"
         android:icon="@drawable/ic_pocket"
         android:title="@string/pocket_judge_title"

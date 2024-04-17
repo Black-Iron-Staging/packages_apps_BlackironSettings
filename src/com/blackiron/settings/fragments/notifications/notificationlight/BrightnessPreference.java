@@ -41,7 +41,7 @@ import lineageos.providers.LineageSettings;
 
 import org.lineageos.internal.notification.LightsCapabilities;
 import org.lineageos.internal.notification.LineageNotification;
-import org.blackiron.support.preferences.CustomDialogPref;
+import com.blackiron.settings.preferences.CustomDialogPref;
 import com.android.settings.R;
 
 public class BrightnessPreference extends CustomDialogPref<AlertDialog>

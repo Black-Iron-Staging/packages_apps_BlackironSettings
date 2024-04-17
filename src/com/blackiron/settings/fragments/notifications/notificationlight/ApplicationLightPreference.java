@@ -32,7 +32,7 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceViewHolder;
 
 import org.lineageos.internal.notification.LightsCapabilities;
-import org.blackiron.support.preferences.CustomDialogPref;
+import com.blackiron.settings.preferences.CustomDialogPref;
 import com.android.settings.R;
 
 public class ApplicationLightPreference extends CustomDialogPref<LightSettingsDialog>

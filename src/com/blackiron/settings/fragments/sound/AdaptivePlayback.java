@@ -31,7 +31,7 @@ import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settingslib.widget.MainSwitchPreference;
 
-import org.blackiron.support.preferences.colorpicker.ColorPickerPreference;
+import com.blackiron.settings.preferences.colorpicker.ColorPickerPreference;
 
 public class AdaptivePlayback extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, OnCheckedChangeListener {

@@ -15,26 +15,26 @@
         android:summary="@string/pulse_settings_summary"
         android:fragment="com.blackiron.settings.fragments.PulseSettings" />
 
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="ambient_wake_gestures"
         android:title="@string/ambient_wake_gestures_title"
         android:summary="@string/ambient_wake_gestures_summary"
         android:defaultValue="false" />
 
 
-    <org.blackiron.support.preferences.SecureSettingSwitchPreference
+    <com.blackiron.settings.preferences.SecureSettingSwitchPreference
         android:key="pulse_on_new_tracks"
         android:title="@string/pulse_on_new_tracks_title"
         android:summary="@string/pulse_on_new_tracks_summary"
         android:defaultValue="true" />
 
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="sysui_keyguard_show_battery_bar"
         android:title="@string/keyguard_show_battery_title"
         android:summary="@string/keyguard_show_battery_summary"
         android:defaultValue="false" />
 
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="sysui_keyguard_show_battery_bar_always"
         android:title="@string/keyguard_show_battery_always_title"
         android:summary="@string/keyguard_show_battery_always_summary"

@@ -33,8 +33,8 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-import org.blackiron.support.preferences.colorpicker.ColorPickerPreference;
-import org.blackiron.support.preferences.CustomSeekBarPreference;
+import com.blackiron.settings.preferences.colorpicker.ColorPickerPreference;
+import com.blackiron.settings.preferences.CustomSeekBarPreference;
 
 public class BatteryBar extends SettingsPreferenceFragment
             implements Preference.OnPreferenceChangeListener  {

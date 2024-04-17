@@ -19,14 +19,14 @@
     xmlns:lineage="http://schemas.android.com/apk/res-auto"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="alert_slider_notifications"
         android:icon="@drawable/ic_light_switch"
         android:title="@string/alert_slider_notifications_title"
         android:summary="@string/alert_slider_notifications_summary"
         android:defaultValue="true" />
 
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_sound_vib_screen_on"
         android:icon="@drawable/ic_bell_ring"
         android:title="@string/notification_sound_vib_screen_on_title"
@@ -34,14 +34,14 @@
         android:defaultValue="true" />
 
     <!-- Notification guts kill app button -->
-    <org.blackiron.support.preferences.SystemSettingSwitchPreference
+    <com.blackiron.settings.preferences.SystemSettingSwitchPreference
         android:key="notification_guts_kill_app_button"
         android:icon="@drawable/ic_kill"
         android:title="@string/notification_guts_kill_app_button_title"
         android:summary="@string/notification_guts_kill_app_button_summary" />
 
     <!-- Show clipboard overlay -->
-    <org.blackiron.support.preferences.SecureSettingSwitchPreference
+    <com.blackiron.settings.preferences.SecureSettingSwitchPreference
         android:key="show_clipboard_overlay"
         android:icon="@drawable/ic_clipboard_alert"
         android:title="@string/show_clipboard_overlay_title"
@@ -52,7 +52,7 @@
         android:key="heads_up"
         android:title="@string/notification_heads_up_title">
 
-        <org.blackiron.support.preferences.GlobalSettingSwitchPreference
+        <com.blackiron.settings.preferences.GlobalSettingSwitchPreference
             android:key="heads_up_notifications_enabled"
             android:icon="@drawable/ic_headsup"
             android:title="@string/notification_heads_up_title"
@@ -67,7 +67,7 @@
             android:fragment="com.blackiron.settings.fragments.notifications.IslandSettings"
             android:dependency="heads_up_notifications_enabled" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="less_boring_heads_up"
             android:icon="@drawable/ic_headsup_sleep"
             android:title="@string/less_boring_heads_up_title"
@@ -75,7 +75,7 @@
             android:defaultValue="false"
             android:dependency="heads_up_notifications_enabled" />
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="heads_up_timeout"
             android:icon="@drawable/ic_clock"
             android:title="@string/notification_heads_up_timeout_title"
@@ -91,7 +91,7 @@
         android:key="flashlight_category"
         android:title="@string/power_menu_torch_title">
 
-        <org.blackiron.support.preferences.SystemSettingListPreference
+        <com.blackiron.settings.preferences.SystemSettingListPreference
             android:key="flashlight_on_call"
             android:icon="@drawable/ic_flashlight"
             android:title="@string/flashlight_on_call_title"
@@ -99,14 +99,14 @@
             android:entryValues="@array/flashlight_on_call_values"
             android:defaultValue="0" />
 
-        <org.blackiron.support.preferences.SystemSettingSwitchPreference
+        <com.blackiron.settings.preferences.SystemSettingSwitchPreference
             android:key="flashlight_on_call_ignore_dnd"
             android:icon="@drawable/ic_flashlight"
             android:title="@string/flashlight_on_call_ignore_dnd_title"
             android:summary="@string/flashlight_on_call_ignore_dnd_summary"
             android:defaultValue="false" /> 
 
-        <org.blackiron.support.preferences.SystemSettingSeekBarPreference
+        <com.blackiron.settings.preferences.SystemSettingSeekBarPreference
             android:key="flashlight_on_call_rate"
             android:icon="@drawable/ic_flashlight"
             android:title="@string/flashlight_on_call_rate_title"
