@@ -57,7 +57,7 @@
             android:icon="@drawable/ic_headsup"
             android:title="@string/notification_heads_up_title"
             android:summary="@string/notification_heads_up_summary"
-            android:defaultValue="true" />
+            lineage:position="top" />
 
         <Preference
             android:key="island_notification"
