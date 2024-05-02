@@ -1278,4 +1278,8 @@
     <string name="udfps_settings_summary">Settings for customizing the UDFPS</string>
     <string name="udfps_icon_picker_title">UDFPS icon picker</string>
     <string name="udfps_icon_picker_summary">Choose your favorite fingerprint icon</string>
+
+    <!-- QS Bluetooth auto on -->
+    <string name="qs_bt_auto_on_title">Automatic Bluetooth on</string>
+    <string name="qs_bt_auto_on_summary">Always turn on Bluetooth when pressing the Bluetooth QS tile</string>
 </resources>
