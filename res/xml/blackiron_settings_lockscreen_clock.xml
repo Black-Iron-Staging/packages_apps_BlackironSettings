@@ -39,7 +39,7 @@
             lineage:position="solo" />
 
         <!-- Lockscreen Clock Font style -->
-        <com.android.settings.preferences.ui.AdaptivePreference
+        <com.blackiron.settings.preferences.SecureSettingListPreference
             android:key="android.theme.customization.lockscreen_clock_font"
             android:icon="@drawable/ic_font"
             android:title="@string/theme_customization_lock_clock_title"
