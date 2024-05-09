@@ -71,8 +71,7 @@
             android:key="shake_gestures_enabled"
             android:title="@string/shake_gestures_enabled_title"
             android:summary="@string/shake_gestures_enabled_summary"
-            android:defaultValue="false"
-            lineage:position="top" />
+            android:defaultValue="false" />
 
         <com.android.settings.preferences.ui.AdaptiveListPreference
             android:key="shake_gestures_action"
@@ -92,8 +91,7 @@
             android:defaultValue="3"
             settings:interval="1"
             android:max="12"
-            android:min="1"
-            lineage:position="bottom" />
+            android:min="1" />
 
     </PreferenceCategory>
 
