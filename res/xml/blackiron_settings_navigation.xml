@@ -73,7 +73,7 @@
             android:summary="@string/shake_gestures_enabled_summary"
             android:defaultValue="false" />
 
-        <com.android.settings.preferences.ui.AdaptiveListPreference
+        <ListPreference
             android:key="shake_gestures_action"
             android:icon="@drawable/ic_settings_gestures"
             android:dialogTitle="@string/shake_gestures_action_title"
